@@ -1,0 +1,51 @@
+.topbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-family: 'HarryPotterFont', serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+  }
+  
+  .topbar-left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .topbar-search {
+    width: 500px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topbar-search::placeholder {
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .logout-btn {
+    background-color: black;
+    color: gold;
+    border: 2px solid gold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-family: 'HarryPotterFont', serif;
+    font-size: 26px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background-color: gold;
+    color: black;
+  }
+  

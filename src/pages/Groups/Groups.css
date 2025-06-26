@@ -1,0 +1,45 @@
+/* עמוד הקבוצות הכללי */
+.groups-page {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-family: 'HarryPotter', serif;
+  color: var(--hp-gold);
+}
+
+/* כותרת “My Magical Groups” */
+.mg-title {
+  font-family: 'HarryPotter', serif;
+  font-size: 1.6rem;
+  color: var(--hp-gold);
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid var(--hp-gold);
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+/* כותרת Discover */
+.discover-title {
+  font-family: 'HarryPotter', serif;
+  font-size: 1.4rem;
+  color: var(--hp-gold);
+  text-align: center;
+  margin: 1.5rem 0 0.75rem;
+  border-bottom: 1px solid var(--hp-gold);
+}
+
+/* Modal backdrop & wrapper */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-wrapper {
+  max-height: 90vh;
+  overflow-y: auto;
+}

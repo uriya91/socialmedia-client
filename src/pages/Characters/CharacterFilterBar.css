@@ -1,0 +1,50 @@
+.character-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .filter-field {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #1c1c1c;
+    border: 1px solid gold;
+    border-radius: 8px;
+    padding: 6px 10px;
+    color: gold;
+  }
+  
+  .filter-field input,
+  .filter-field select {
+    background: transparent;
+    border: none;
+    color: gold;
+    background-color: black;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .clear-filters-btn {
+    background-color: black;
+    color: gold;
+    border: 2px solid gold;
+    padding: 10px 14px;
+    font-size: 20px;
+    font-family: 'HarryPotterFont', serif;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .clear-filters-btn:hover {
+    background-color: gold;
+    color: black;
+  }
+  

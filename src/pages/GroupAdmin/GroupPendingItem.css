@@ -1,0 +1,35 @@
+.gpi-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 8px;
+    border-bottom: 1px dashed var(--hp-gold);
+    background: transparent;
+  }
+  .gpi-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--hp-gold);
+  }
+  .gpi-name {
+    flex: 1;
+    font-family: 'HarryPotterFont', serif;
+    color: var(--hp-gold);
+  }
+  .gpi-accept,
+  .gpi-reject {
+    padding: 2px 8px;
+    border: 1px solid var(--hp-gold);
+    background: transparent;
+    color: var(--hp-gold);
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  .gpi-accept:hover,
+  .gpi-reject:hover {
+    background: var(--hp-gold);
+    color: var(--hp-black);
+  }
+  

@@ -1,0 +1,17 @@
+.gpl-wrap {
+    margin: 1rem 0;
+  }
+  .gpl-title {
+    font-family: 'HarryPotterFont', serif;
+    color: var(--hp-gold);
+    margin-bottom: 0.5rem;
+  }
+  .gpl-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--hp-gold);
+    max-height: 160px;
+    overflow-y: auto;
+  }
+  

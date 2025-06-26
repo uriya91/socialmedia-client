@@ -1,0 +1,14 @@
+/* גריד הקבוצות ב־Discover */
+.glist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+  overflow-y: auto;
+}
+
+.glist-empty {
+  text-align: center;
+  color: var(--hp-gold);
+  margin-top: 2rem;
+}

@@ -1,0 +1,181 @@
+/* כרטיס קבוצה בספינר העליון */
+.mg-group-card {
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.95);
+  border: 2px solid #d6b24b;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  min-height: 200px;
+}
+
+.mg-group-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.25);
+  border-color: #ffed4e;
+}
+
+/* קונטיינר התמונה - תמונה עגולה כמו בתחתון */
+.mg-group-image-container {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.mg-group-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #d6b24b;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.mg-group-image-container:hover .mg-group-image {
+  opacity: 1;
+  transform: scale(1.1);
+  border-color: #ffed4e;
+}
+
+/* אפקט overlay על התמונה */
+.mg-group-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+}
+
+.mg-group-image-container:hover .mg-group-overlay {
+  opacity: 1;
+}
+
+.mg-group-overlay-text {
+  color: #d6b24b;
+  font-family: 'HarryPotterFont', serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* מידע הקבוצה */
+.mg-group-info {
+  flex: 1;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 60px;
+}
+
+.mg-group-name {
+  font-family: 'HarryPotterFont', serif;
+  color: #d6b24b;
+  font-size: 1.1rem;
+  margin: 0 0 0.4rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+  max-width: 100%;
+}
+
+.mg-group-members {
+  color: #bbb;
+  font-size: 0.85rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* כפתורי פעולה */
+.mg-group-actions {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  gap: 0.3rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 5;
+}
+
+.mg-group-card:hover .mg-group-actions {
+  opacity: 1;
+}
+
+.mg-action-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #d6b24b;
+  background: rgba(0, 0, 0, 0.9);
+  color: #d6b24b;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(5px);
+}
+
+.mg-edit-btn:hover {
+  background: #4caf50;
+  border-color: #4caf50;
+  color: white;
+  transform: scale(1.1);
+}
+
+.mg-leave-btn:hover {
+  background: #f44336;
+  border-color: #f44336;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mg-group-card {
+    min-height: 180px;
+  }
+  
+  .mg-group-image {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .mg-group-name {
+    font-size: 1rem;
+  }
+  
+  .mg-group-members {
+    font-size: 0.8rem;
+  }
+  
+  .mg-action-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+}

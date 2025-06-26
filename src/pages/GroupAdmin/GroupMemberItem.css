@@ -1,0 +1,28 @@
+.gmember-item .shield {
+    font-size: 1rem;
+    color: var(--hp-gold);
+}
+
+.gmember-item .gmi-name {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gmember-item .role-btn,
+.gmember-item .remove-btn {
+    padding: 2px 8px;
+    border: 1px solid var(--hp-gold);
+    background: transparent;
+    color: var(--hp-gold);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.gmember-item .role-btn:hover,
+.gmember-item .remove-btn:hover {
+    background: var(--hp-gold);
+    color: var(--hp-black);
+}

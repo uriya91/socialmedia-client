@@ -1,0 +1,60 @@
+.feed-container {
+  padding: 20px;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #facc15;
+  margin-bottom: 30px;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  border: 2px solid #facc15;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.filter-icon {
+  color: #facc15;
+  margin-right: 6px;
+}
+
+.filter-input {
+  background-color: black;
+  border: none;
+  color: white;
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 14px;
+  outline: none;
+}
+
+.filter-input::placeholder {
+  color: #facc15;
+  opacity: 0.7;
+}
+
+.clear-btn {
+  background-color: black;
+  color: #facc15;
+  border: 2px solid #facc15;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-family: "Cinzel Decorative", cursive;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clear-btn:hover {
+  background-color: #facc15;
+  color: black;
+}

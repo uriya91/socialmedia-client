@@ -1,0 +1,48 @@
+.feed-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "harrypotterfont", serif;
+}
+
+.new-post-form {
+  margin: 30px 0;
+  padding: 25px;
+  background: #111;
+  border: 2px solid gold;
+  border-radius: 12px;
+}
+
+.new-post-textarea {
+  width: 100%;
+  min-height: 150px;
+  font-size: 1.6rem;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 2px solid gold;
+  background: #222;
+  color: gold;
+}
+
+.sr-btn.primary {
+  font-size: 1.4rem;
+  padding: 12px 28px;
+  background-color: #111;
+  color: gold;
+  border: 2px solid gold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sr-btn.primary:hover {
+  background-color: #333;
+}
+
+.feed-post-item {
+  background: #111;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  border: 2px solid gold;
+}

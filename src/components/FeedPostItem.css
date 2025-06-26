@@ -1,0 +1,209 @@
+.hp-post {
+  background: #111;
+  border: 2px solid gold;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 28px;
+  font-family: "harrypotterfont", serif;
+  color: gold;
+  display: flex;
+  flex-direction: column;
+}
+
+.hp-post__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.hp-profile-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid gold;
+  flex-shrink: 0;
+}
+
+.hp-post__user {
+  flex: 1;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  user-select: none;
+}
+
+.hp-post__actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.hp-icon {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: gold;
+  transition: transform 0.2s;
+  padding: 4px;
+}
+
+.hp-icon:hover {
+  transform: scale(1.2);
+}
+
+.hp-icon--delete:hover {
+  color: #ff4d4d;
+}
+
+.hp-icon--edit:hover {
+  color: #4caf50;
+}
+
+.hp-icon--spacer {
+  width: 1.6rem;
+  visibility: hidden;
+}
+
+.hp-post__content {
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #eee;
+  margin: 14px 0;
+  text-align: center;
+}
+
+.hp-post__edit-section {
+  margin: 14px 0;
+}
+
+.hp-post__edit {
+  width: 100%;
+  min-height: 120px;
+  background: #222;
+  color: gold;
+  border: 2px solid gold;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1.6rem;
+  resize: vertical;
+  font-family: "harrypotterfont", serif;
+  box-sizing: border-box;
+}
+
+.hp-post__edit-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.hp-save-button {
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hp-save-button:hover:not(:disabled) {
+  background: #45a049;
+}
+
+.hp-save-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.hp-cancel-button {
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  background: #666;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hp-cancel-button:hover:not(:disabled) {
+  background: #555;
+}
+
+.hp-cancel-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.hp-post__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hp-post__footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.hp-post__group {
+  font-size: 0.9rem;
+  color: #888;
+  font-style: italic;
+}
+
+.hp-post__footer-right {
+  display: flex;
+  gap: 10px;
+}
+
+.hp-post__btn {
+  border: 2px solid gold;
+  border-radius: 6px;
+  background: transparent;
+  color: gold;
+  padding: 6px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hp-post__btn:hover {
+  background: gold;
+  color: #111;
+}
+
+@media (max-width: 768px) {
+  .hp-post__header {
+    flex-wrap: wrap;
+  }
+  
+  .hp-post__user {
+    font-size: 1.5rem;
+  }
+  
+  .hp-post__content {
+    font-size: 1.6rem;
+  }
+  
+  .hp-post__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .hp-post__footer-right {
+    width: 100%;
+    justify-content: center;
+  }
+}

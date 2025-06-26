@@ -1,0 +1,23 @@
+.gml-wrap {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gmember-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px dashed var(--hp-gold);
+    padding: 4px 0;
+    font-size: 0.9rem;
+    color: var(--hp-gold);
+    font-family: 'HarryPotterFont', serif;
+}
+
+.gmember-item img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+}

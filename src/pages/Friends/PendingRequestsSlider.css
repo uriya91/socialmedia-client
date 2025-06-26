@@ -1,0 +1,38 @@
+.prs-wrapper {
+    position: relative;
+    height: 210px;
+    border-bottom: 2px solid gold;
+    background: #000;
+    display: flex;
+    align-items: center;
+  }
+  
+  .prs-track {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    height: 100%;
+    padding: 0 46px;
+    align-items: center;
+  }
+  .prs-track::-webkit-scrollbar { display: none; }
+  
+  .prs-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    background: #000;
+    border: 2px solid gold;
+    color: gold;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+  }
+  .prs-arrow:hover { background: #111; }
+  .prs-arrow.left  { left: 8px; }
+  .prs-arrow.right { right: 8px; }
+  

@@ -1,0 +1,109 @@
+.new-post-form {
+  display: flex;
+  flex-direction: column;
+  background: #111;
+  border: 2px solid gold;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+}
+
+.new-post-textarea {
+  background: #222;
+  color: rgb(243, 242, 239);
+  border: 2px solid gold;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  resize: vertical;
+  font-family: "harrypotterfont", serif;
+  font-size: 32px;
+  min-height: 180px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.new-post-textarea:focus {
+  outline: none;
+  border-color: #ffed4e;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.new-post-textarea::placeholder {
+  color: #888;
+  font-size: 32px;
+  font-style: italic;
+}
+
+.sr-btn.primary {
+  font-size: 22px;
+  padding: 15px 30px;
+  background-color: #0f140f;
+  color: gold;
+  border: 2px solid gold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "harrypotterfont", serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sr-btn.primary:hover:not(:disabled) {
+  background-color: #586359;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
+.sr-btn.primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .new-post-form {
+    padding: 20px;
+  }
+  
+  .new-post-textarea {
+    font-size: 24px;
+    min-height: 150px;
+    padding: 15px;
+  }
+  
+  .new-post-textarea::placeholder {
+    font-size: 24px;
+  }
+  
+  .sr-btn.primary {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .new-post-textarea {
+    font-size: 20px;
+    min-height: 120px;
+    padding: 12px;
+  }
+  
+  .new-post-textarea::placeholder {
+    font-size: 20px;
+  }
+  
+  .sr-btn.primary {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,35 @@
+.character-card {
+    background: #111;
+    border: 2px solid gold;
+    border-radius: 16px;
+    padding: 16px;
+    width: 100%;
+    max-width: 240px;
+    color: gold;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .character-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .character-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .character-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffd700;
+  }
+  
+  .character-info {
+    font-size: 14px;
+    text-align: left;
+  }
+  

@@ -1,0 +1,120 @@
+.sr-row {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .4rem .6rem;
+    border-bottom: 1px solid #222;
+    background: #111;
+    transition: background-color 0.2s ease;
+}
+
+.sr-row:hover { 
+    background: #1b1b1b; 
+}
+
+.sr-row.clickable {
+    cursor: pointer;
+}
+
+.sr-row.clickable:hover {
+    background: #2a2a2a;
+}
+
+.sr-row.non-clickable {
+    cursor: default;
+}
+
+.sr-row.non-clickable:hover {
+    background: #1b1b1b;
+}
+
+.sr-avatar {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid gold;
+}
+
+.sr-name {
+    flex: 1 1 auto;
+    color: gold;
+    font-size: .85rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: 'HarryPotterFont', serif;
+}
+
+.sr-btn {
+    flex: 0 0 auto;
+    padding: 6px 12px;
+    font-size: .8rem;
+    border: 1px solid;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'HarryPotterFont', serif;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    min-width: 90px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sr-btn.add { 
+    background: #1b5e20;
+    border-color: #4caf50;
+    color: #fff;
+}
+
+.sr-btn.add:hover { 
+    background: #4caf50;
+    border-color: #66bb6a;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+}
+
+.sr-btn.accept { 
+    background: #2e7d32;
+    border-color: #4caf50;
+    color: #fff;
+}
+
+.sr-btn.accept:hover { 
+    background: #4caf50;
+    border-color: #66bb6a;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+}
+
+.sr-btn.cancel { 
+    background: #e65100;
+    border-color: #ff9800;
+    color: #fff;
+}
+
+.sr-btn.cancel:hover { 
+    background: #ff9800;
+    border-color: #ffb74d;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(255, 152, 0, 0.3);
+}
+
+.sr-btn.remove { 
+    background: #c62828;
+    border-color: #f44336;
+    color: #fff;
+}
+
+.sr-btn.remove:hover { 
+    background: #f44336;
+    border-color: #e57373;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(244, 67, 54, 0.3);
+}
+
+.sr-row.non-clickable .sr-name {
+    opacity: 0.7;
+}

@@ -1,0 +1,113 @@
+.comment-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid gold;
+  font-family: "harrypotterfont", serif;
+}
+
+.comment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment-item {
+  background: #1a1a1a;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 2px solid gold;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment-author {
+  font-weight: bold;
+  color: gold;
+  font-size: 1.4rem;
+}
+
+.comment-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.comment-icon {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: gold;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.comment-icon:hover {
+  transform: scale(1.2);
+}
+
+.comment-icon[title="Delete"]:hover {
+  color: #ff4d4d;
+}
+
+.comment-icon[title="Edit"]:hover {
+  color: #4caf50;
+}
+
+.comment-icon[title="Save"]:hover {
+  color: #00c853;
+}
+
+.comment-edit-input {
+  background: #222;
+  color: gold;
+  border: 2px solid gold;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1.3rem;
+  margin-top: 6px;
+  width: 100%;
+  resize: vertical;
+  font-family: "harrypotterfont", serif;
+}
+
+.comment-content {
+  color: #eee;
+  font-size: 1.3rem;
+  margin-top: 6px;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+}
+
+.comment-input {
+  background: #222;
+  color: gold;
+  border: 2px solid gold;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-family: "harrypotterfont", serif;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.comment-submit-btn {
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.comment-submit-btn:hover {
+  background: #45a049;
+}

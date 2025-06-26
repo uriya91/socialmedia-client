@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  background-image: url('./assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: 'HarryPotter';
+  src: url('/fonts/harrypotterfont.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'HarryPotter', sans-serif;
+}
+
+:root {
+  --hp-black: #0a0a0a;
+  --hp-gold : #d6b24b;
+}

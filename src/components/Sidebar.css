@@ -1,0 +1,79 @@
+.sidebar-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 260px;
+  padding: 20px 15px;
+  font-family: "HarryPotterFont", serif;
+  color: gold;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.profile-section {
+  text-align: center;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid gold;
+}
+
+.username-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.username {
+  font-size: 36px;
+  color: gold;
+  word-break: break-word;
+  max-width: 90%;
+}
+
+.edit-btn {
+  background: none;
+  border: none;
+  color: gold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-size: 16px;
+}
+
+.edit-btn:hover {
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar-btn {
+  background-color: black;
+  color: gold;
+  border: 2px solid gold;
+  padding: 10px 14px;
+  font-size: 26px;
+  font-family: "HarryPotterFont", serif;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar-btn:hover {
+  background-color: gold;
+  color: black;
+}

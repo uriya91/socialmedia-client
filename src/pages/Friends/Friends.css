@@ -1,0 +1,12 @@
+.friends-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .friends-grid {
+    flex: 1 1 auto;
+    overflow-y: auto;
+  }
+  

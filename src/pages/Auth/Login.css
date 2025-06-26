@@ -1,0 +1,118 @@
+
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  min-height: 100vh;
+  background: transparent;
+}
+
+.title {
+  font-family: 'HarryPotterFont', serif;
+  color: gold;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow:
+      0 0 5px black,
+      0 0 10px black,
+      0 0 15px black;
+}
+
+.login-card {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitle {
+  font-family: 'HarryPotterFont', serif;
+  font-size: 30px;
+  color: gold;
+  text-shadow: 0 0 5px black, 0 0 10px black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label {
+  font-family: 'HarryPotterFont', serif;
+  color: gold;
+  font-size: 24px;
+  margin-bottom: 6px;
+  text-shadow:
+      0 0 5px black,
+      0 0 10px black,
+      0 0 15px black;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #222;
+  color: white;
+  font-size: 16px;
+}
+
+.remember-login-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 4px;
+  
+}
+
+.remember-me {
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  margin-left: 45px;
+  margin-right: 185px;
+}
+
+.form-button {
+  background-color: black;
+  color: gold;
+  border: 2px solid gold;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-family: 'HarryPotterFont', serif;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: gold;
+  color: black;
+}
+
+.signup-redirect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  font-size: 20px;
+}

@@ -1,0 +1,51 @@
+.traffic-container {
+  padding: 2rem;
+  font-family: "harrypotterfont", serif;
+  background-color: #111;
+  color: gold;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.traffic-title {
+  font-size: 3.4rem;
+  margin-bottom: 3rem;
+  color: gold;
+  text-shadow: 2px 2px 8px #000;
+  text-align: center;
+}
+
+.chart-section {
+  background: #1a1a1a;
+  border: 2px solid gold;
+  border-radius: 12px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 4rem;
+  box-shadow: 0 0 15px gold;
+}
+
+.chart-title {
+  font-size: 2.2rem;
+  color: gold;
+  margin-bottom: 1.8rem;
+  text-align: center;
+  text-shadow: 1px 1px 6px black;
+}
+
+.no-data {
+  color: #ccc;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.traffic-loading {
+  font-family: "harrypotterfont", serif;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 3rem;
+  color: gold;
+}
